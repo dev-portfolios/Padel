@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  root "venues#index"
+  
   devise_for :users
+
+  resources :venues, only: [:show]
 
   namespace :rui do
     get "about", to: "pages#about"
@@ -28,7 +32,7 @@ Rails.application.routes.draw do
 
   # Inherits from Railsui::PageController#index
   # To override, add your own page#index view or change to a new root
-  root action: :index, controller: "railsui/default"
+  # root action: :index, controller: "railsui/default"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -41,5 +45,4 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
 end

@@ -26,8 +26,12 @@
 </head>
 
   <body>
+    <%= render "shared_views/top_nav" %>
+
     <%= yield %>
+    
+    <%= render "shared_views/footer" %>
   
-    <%= railsui_launcher if Rails.env.development? %>
+    <%#= railsui_launcher if Rails.env.development? %>
 </body>
 </html>
