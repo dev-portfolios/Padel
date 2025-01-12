@@ -1,0 +1,16 @@
+<section class="w-fit mx-auto m-12 min-h-full scroll-smooth">
+  
+  <article class="flex flex-col rounded dark:shadow-slate-900/50 bg-white dark:bg-slate-700 dark:text-white gap-4 transition duration-500 ease-in-out">
+    <img src="<%= @venue.image %>" alt="<%= @venue.name_en %>" loading="lazy" class="block object-contain">
+    <div class="flex flex-col gap-1 px-8 mb-2">
+      <header class="font-bold dark:text-white"><%= @venue.name_en %></header>      
+      <div class="flex gap-1 items-center dark:text-white"><%= icon "map-pin", class: "w-5 h-5" %><span class=""><%= @venue.address_en %></span></div>
+    </div>
+
+    <article class="px-8 mb-6 m-auto flex gap-6 justify-center rounded dark:shadow-slate-900/50 bg-white dark:bg-slate-700 dark:text-white gap-4 transition duration-500 ease-in-out">
+      <%= render partial: "date_card", collection: @venue.max_bookable_days, as: :date %>
+    </article>
+  </article>
+
+
+</section>

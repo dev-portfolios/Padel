@@ -1,22 +1,22 @@
-<footer class="fixed bottom-0 left-0 right-0 mt-24 dark:bg-slate-900 py-1 dark:text-white" data-controller="nav">
+<footer class="dark:bg-slate-900 py-1 dark:text-white" data-controller="nav">
   <nav role="Utility navigation">
-    <ul class="lg:flex items-center justify-center text-center lg:my-6 mb-6 lg:text-base text-lg">
-      <li class="py-3 lg:py-0">
+    <ul class="lg:flex sm:my-2 items-center justify-center text-center lg:my-6 mb-6 lg:text-base text-lg">
+      <li class="py-3 lg:py-0 sm:py-1">
         <%= link_to "Product", "#", class: "px-3 py-2 hover:text-primary-700 dark:hover:text-primary-500" %>
       </li>
-      <li class="py-3 lg:py-0">
+      <li class="py-3 lg:py-0 sm:py-1">
         <%= link_to "Customers", "#", class: "px-3 py-2 hover:text-primary-700 dark:hover:text-primary-500" %>
       </li>
-      <li class="py-3 lg:py-0">
+      <li class="py-3 lg:py-0 sm:py-1">
         <%= link_to "Features", "#", class: "px-3 py-2 hover:text-primary-700 dark:hover:text-primary-500" %>
       </li>
       <% if defined?(rui_pricing_path) %>
-        <li class="py-3 lg:py-0">
+        <li class="py-3 lg:py-0 sm:py-1">
           <%= link_to "Pricing", rui_pricing_path, class: "px-3 py-2 hover:text-primary-700 dark:hover:text-primary-500" %>
         </li>
       <% end %>
       <% if defined?(rui_about_path)%>
-        <li class="py-3 lg:py-0">
+        <li class="py-3 lg:py-0 sm:py-1">
           <%= link_to "Company", rui_about_path, class: "px-3 py-2 hover:text-primary-700  dark:hover:text-primary-500" %>
         </li>
       <% end %>
