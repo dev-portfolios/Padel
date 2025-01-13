@@ -15,8 +15,8 @@ class CreateVenues < ActiveRecord::Migration[8.0]
       t.string    :address_cn, index: true
       t.string    :area_en, index: true
       t.string    :area_cn, index: true
-      t.decimal   :latitude,  :precision => 15, :scale => 10
-      t.decimal   :longitude, :precision => 15, :scale => 10
+      t.decimal   :latitude,  precision: 15, scale: 10
+      t.decimal   :longitude, precision: 15, scale: 10
       t.integer   :late_cancellation_in_minutes, default: 0
       t.boolean   :late_cancellation, default: false
       t.boolean   :active, default: true
@@ -28,7 +28,7 @@ class CreateVenues < ActiveRecord::Migration[8.0]
       t.integer   :confirm_in_minutes, default: 10
       t.integer   :min_bookable_minutes, default: 60
       t.integer   :max_bookable_units, default: 3
-      t.decimal   :unit_price,     :precision => 8, :scale => 2
+      t.decimal   :unit_price,     precision: 8, scale: 2
 
       t.timestamps
     end

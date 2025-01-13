@@ -6,7 +6,7 @@ class CreateAmenities < ActiveRecord::Migration[8.0]
       t.integer    :position
       t.string     :url
       t.boolean    :active, default: true
-      
+
       t.timestamps
     end
   end

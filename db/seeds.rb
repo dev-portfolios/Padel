@@ -1,24 +1,22 @@
 amenities_data = [
-  {"title_en"=>"WIFI", "title_cn"=>"WIFI", "url"=>"https://assets-sh-padelx.shanghaipadel.com/wifi.png", "position"=>0},
-  {"title_en"=>"Shower", "title_cn"=>"浴室", "url"=>"https://assets-sh-padelx.shanghaipadel.com/shower.png", "position"=>1},
-  {"title_en"=>"Gym", "title_cn"=>"健身房", "url"=>"https://assets-sh-padelx.shanghaipadel.com/gym-icon.png", "position"=>2},
-  {"title_en"=>"Jacuzzi", "title_cn"=>"按摩池", "url"=>"https://assets-sh-padelx.shanghaipadel.com/jacuzzi.png", "position"=>3},
-  {"title_en"=>"Locker", "title_cn"=>"更衣室", "url"=>"https://assets-sh-padelx.shanghaipadel.com/clothes-hanger.png", "position"=>4},
-  {"title_en"=>"Sauna", "title_cn"=>"桑拿房", "url"=>"https://assets-sh-padelx.shanghaipadel.com/sauna.png", "position"=>5},
-  {"title_en"=>"Towel", "title_cn"=>"毛巾", "url"=>"https://assets-sh-padelx.shanghaipadel.com/towel.png", "position"=>6},
-  {"title_en"=>"Lotions", "title_cn"=>"护肤用品", "url"=>"https://assets-sh-padelx.shanghaipadel.com/lotion.png", "position"=>7},
-  {"title_en"=>"Toiletries", "title_cn"=>"洗漱用品", "url"=>"https://assets-sh-padelx.shanghaipadel.com/toothbrush.png", "position"=>8},
-  {"title_en"=>"Water", "title_cn"=>"饮用水", "url"=>"https://assets-sh-padelx.shanghaipadel.com/water.png", "position"=>9},
-  {"title_en"=>"free parking", "title_cn"=>"免费停车", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>10},
-  {"title_en"=>"Parking", "title_cn"=>"有停车位", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>11},
-  {"title_en"=>"Park", "title_cn"=>"免费停车", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>12},
-  {"title_en"=>"NEW", "title_cn"=>"NEW", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>13},
-  {"title_en"=>"Racket rent", "title_cn"=>"Racket rent", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>14},
+  { "title_en"=>"WIFI", "title_cn"=>"WIFI", "url"=>"https://assets-sh-padelx.shanghaipadel.com/wifi.png", "position"=>0 },
+  { "title_en"=>"Shower", "title_cn"=>"浴室", "url"=>"https://assets-sh-padelx.shanghaipadel.com/shower.png", "position"=>1 },
+  { "title_en"=>"Gym", "title_cn"=>"健身房", "url"=>"https://assets-sh-padelx.shanghaipadel.com/gym-icon.png", "position"=>2 },
+  { "title_en"=>"Jacuzzi", "title_cn"=>"按摩池", "url"=>"https://assets-sh-padelx.shanghaipadel.com/jacuzzi.png", "position"=>3 },
+  { "title_en"=>"Locker", "title_cn"=>"更衣室", "url"=>"https://assets-sh-padelx.shanghaipadel.com/clothes-hanger.png", "position"=>4 },
+  { "title_en"=>"Sauna", "title_cn"=>"桑拿房", "url"=>"https://assets-sh-padelx.shanghaipadel.com/sauna.png", "position"=>5 },
+  { "title_en"=>"Towel", "title_cn"=>"毛巾", "url"=>"https://assets-sh-padelx.shanghaipadel.com/towel.png", "position"=>6 },
+  { "title_en"=>"Lotions", "title_cn"=>"护肤用品", "url"=>"https://assets-sh-padelx.shanghaipadel.com/lotion.png", "position"=>7 },
+  { "title_en"=>"Toiletries", "title_cn"=>"洗漱用品", "url"=>"https://assets-sh-padelx.shanghaipadel.com/toothbrush.png", "position"=>8 },
+  { "title_en"=>"Water", "title_cn"=>"饮用水", "url"=>"https://assets-sh-padelx.shanghaipadel.com/water.png", "position"=>9 },
+  { "title_en"=>"free parking", "title_cn"=>"免费停车", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>10 },
+  { "title_en"=>"Parking", "title_cn"=>"有停车位", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>11 },
+  { "title_en"=>"Racket rent", "title_cn"=>"Racket rent", "url"=>"https://assets-sh-padelx.shanghaipadel.com/park.png", "position"=>14 }
 ]
 
-amenities_data.each {|x| Amenity.create(x)}
+amenities_data.each { |x| Amenity.create(x) }
 
-DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].freeze
+DAYS = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ].freeze
 
 
 
@@ -48,7 +46,7 @@ venues_data = [
     min_bookable_minutes: 60,
     max_bookable_units: 2,
     unit_price: 240.0,
-    business_hours: '9:00 to 22:00, Saturday and Sundays',
+    business_hours: '9:00 to 22:00, Saturday and Sundays'
   },
   {
     city_en: 'Shanghai',
@@ -76,7 +74,7 @@ venues_data = [
     min_bookable_minutes: 60,
     max_bookable_units: 3,
     unit_price: 500,
-    business_hours: '07:00 to 23:00, Monday to Sunday',
+    business_hours: '07:00 to 23:00, Monday to Sunday'
   },
   {
     city_en: 'Shanghai',
@@ -97,8 +95,8 @@ venues_data = [
     address_cn: '长寿路652号F栋楼11层，要从叶家宅路100号创享塔园区门口进来',
     area_en: 'Putuo',
     area_cn: '普陀区',
-    latitude:31.2382469,
-    longitude:121.4324567,
+    latitude: 31.2382469,
+    longitude: 121.4324567,
     late_cancellation_in_minutes: 4320,
     late_cancellation: true,
     advanced_bookable_days: 7,
@@ -109,7 +107,7 @@ venues_data = [
     min_bookable_minutes: 60,
     max_bookable_units: 3,
     unit_price: 240.0,
-    business_hours: '9:00 to 22:00, Saturday and Sundays',
+    business_hours: '9:00 to 22:00, Saturday and Sundays'
   },
   {
     name_en: 'PadelX @ Anken',
@@ -136,7 +134,7 @@ venues_data = [
     min_bookable_minutes: 60,
     max_bookable_units: 2,
     unit_price: 200,
-    business_hours: '6:30 to 21:30, Saturday and Sundays',
+    business_hours: '6:30 to 21:30, Saturday and Sundays'
   },
   {
     city_en: 'Shanghai',
@@ -164,7 +162,7 @@ venues_data = [
     min_bookable_minutes: 60,
     max_bookable_units: 2,
     unit_price: 400,
-    business_hours: '7:00 to 22:00, Saturday and Sundays',
+    business_hours: '7:00 to 22:00, Saturday and Sundays'
   },
   {
     city_en: 'Shanghai',
@@ -192,7 +190,7 @@ venues_data = [
     min_bookable_minutes: 60,
     max_bookable_units: 2,
     unit_price: 400,
-    business_hours: '07:00-22:00, Monday to Sunday',
+    business_hours: '07:00-22:00, Monday to Sunday'
   },
   {
     city_en: 'Shanghai',
@@ -212,15 +210,15 @@ venues_data = [
     longitude: 121.365957,
     late_cancellation_in_minutes: nil,
     late_cancellation: false,
-    advanced_bookable_days:7,
+    advanced_bookable_days: 7,
     image: 'https://assets-sh-padelx.shanghaipadel.com/padelx-bailian-2024.jpeg',
     opening_at: '07:00:00',
     closing_at: '24:00:00',
     min_bookable_minutes: 60,
     max_bookable_units: 3,
     unit_price: 200,
-    business_hours: '07:00 to 24:00, Monday to Sunday',
-  },
+    business_hours: '07:00 to 24:00, Monday to Sunday'
+  }
 
 ]
 
@@ -231,13 +229,12 @@ venues_data.each do |venue_data|
   rand(1..3).times do |i|
     Court.create({
       venue_id: v.id,
-      court_size: ['single', 'double'].sample,
-      court_type: ['outdoor', 'indoor'].sample,
+      court_size: [ 'single', 'double' ].sample,
+      court_type: [ 'outdoor', 'indoor' ].sample,
       name_en: "Court #{v.id} - #{i}",
-      name_cn: "Court #{v.id} - #{i}",
+      name_cn: "Court #{v.id} - #{i}"
     })
   end
 end
 
 p "#{Venue.count} venues, #{Court.count} courts, #{Amenity.count} amenities #{Customer.count} customers, created"
-

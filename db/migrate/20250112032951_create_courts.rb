@@ -8,7 +8,7 @@ class CreateCourts < ActiveRecord::Migration[8.0]
       t.string      :name_cn, index: true
       t.text        :description_en
       t.text        :description_cn
-      t.decimal     :unit_price,     :precision => 8, :scale => 2
+      t.decimal     :unit_price,     precision: 8, scale: 2
 
       t.timestamps
     end

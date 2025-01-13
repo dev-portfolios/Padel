@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root "venues#index"
-  
+
   devise_for :users
 
-  resources :venues, only: [:show]
+  resources :venues, only: [ :show ]
 
   namespace :rui do
     get "about", to: "pages#about"
@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   end
 
   if Rails.env.development?
-     # Visit the start page for Rails UI any time at /railsui/start
+    # Visit the start page for Rails UI any time at /railsui/start
     mount Railsui::Engine, at: "/railsui"
   end
 
